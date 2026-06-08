@@ -67,7 +67,7 @@ More See [RustDesk Api](https://github.com/lejianwen/rustdesk-api)
   <a href="#ein-schlüsselpaar-erstellen">Schlüsselpaar</a> •
   <a href="#debian-pakete">Debian-Pakete</a> •
   <a href="#umgebungsvariablen">Umgebungsvariablen</a><br>
-  [<a href="README.md">English</a>] | [<a href="README-NL.md">Nederlands</a>] | [<a href="README-TW.md">繁體中文</a>] | [<a href="README-ZH.md">简体中文</a>]<br>
+  [<a href="README.md">English</a>] | [<a href="README-NL.md">Nederlands</a>]<br>
 </p>
 
 # RustDesk Server-Programm

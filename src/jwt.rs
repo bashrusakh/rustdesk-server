@@ -5,7 +5,7 @@ use std::env;
 pub static SECRET: Lazy<String> =
     Lazy::new(|| env::var("RUSTDESK_API_JWT_KEY").unwrap_or_else(|_| "".to_string()));
 
-// 定义一个结构体来表示 JWT 的 payload
+// Struct representing the JWT payload
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Claims {
     user_id: u32,
@@ -30,9 +30,9 @@ pub fn generate_token(user_id: u32, exp: i64) -> Result<String, String> {
         Err(e) => Err(e.to_string()),
     }
 }
-// 验证 JWT 的函数
+// Verify JWT token
 pub fn verify_token(token: &str) -> Result<Claims, String> {
-    // 解码 JWT
+    // Decode JWT
     let validation = Validation::new(Algorithm::HS256);
 
     let decoded = decode::<Claims>(
