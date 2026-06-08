@@ -3,6 +3,17 @@
 
 [![build](https://github.com/lejianwen/rustdesk-server/actions/workflows/build.yaml/badge.svg)](https://github.com/lejianwen/rustdesk-server/actions/workflows/build.yaml)
 
+## About this fork
+
+This is a fork of [rustdesk-server](https://github.com/lejianwen/rustdesk-server) by lejianwen with the following modifications:
+- Removed all Chinese text, English is the default language
+- Inlined `hbb_common` dependency (no longer a git submodule)
+- Removed unused remote branches (`0.0.9`, `0.1.x`, `master`)
+
+Original project: https://github.com/rustdesk/rustdesk-server
+
+---
+
 - Solves the issue of connection timeout when the client logs in with an `API` account
 - Added `API` support to the s6 image, `API` open-source repository: https://github.com/lejianwen/rustdesk-api
 - Whether login is required to connect, `MUST_LOGIN` defaults to `N`, set to `Y` to require login for connection
